@@ -1,0 +1,137 @@
+/* - Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+}
+.card{
+    /* width:600px; */
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 0.3);
+}
+.top{
+    width:510px;
+    padding:35px 35px 25px 35px;
+    height:130px;
+    display: flex;
+    flex-direction: column;
+}
+.thead{
+    font-size: 22px;
+    color:hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.subhead{
+    font-size: 16px;
+    color:hsl(71, 73%, 54%);
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.htext{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    color:hsl(218, 22%, 67%);
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buy,.reason{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width:220px;
+    height:170px;
+    padding: 35px 35px 25px 35px;
+}
+.buy{
+    background-color:hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+}
+.subs{
+    font-size:16px;
+    font-weight: 700;
+    color:white;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-top:15px;
+    margin-bottom:7px;
+}
+.mon{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+}
+.month{
+    color:hsla(205, 31%, 86%, 0.756);
+}
+.access{
+    font-size:14px;
+    color:hsl(204, 43%, 93%);
+    margin-bottom: 25px;
+}
+.button{
+    width:100%;
+    height:40px;
+    border:0;
+    border-radius:5px;
+    background-color:hsl(71, 73%, 54%);
+    color:white;
+    font-size: 14px;
+    box-shadow: 0 10px 10px rgb(0 0 0 /0.2);
+}
+.reason{
+    background-color: hsl(179, 57%, 49%);
+    border-radius: 0 0 10px 0;
+}
+.reason{
+    gap:20px;
+}
+.lhead{
+    color:white;
+    font-size:16px;
+}
+.ltext{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color:hsl(179, 47%, 80%);
+}
+@media (max-width:700px){
+    .card{
+        margin:0 auto;
+        min-width: 300px;
+    }
+    .top{
+        justify-content: space-around;
+        width:260px;
+        height:210px;
+        padding: 25px;
+    }
+    .bottom{
+        display: block;
+    }
+    .buy,.reason{
+        width:260px;
+        padding: 25px;
+    }
+    .buy{
+        border-radius: 0;
+    }
+    .reason{
+        border-radius:0 0 5px 5px;
+    }
+}
