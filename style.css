@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Karla', sans-serif;
+    background-color:hsl(218, 22%, 67%);
 }
 .card{
     /* width:600px; */
